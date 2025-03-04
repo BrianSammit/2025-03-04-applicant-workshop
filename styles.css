@@ -133,6 +133,14 @@ input:required:focus {
     margin: 20px;
     cursor: pointer;
 }
+
 main{
     text-align: center;
 }
+
+#charCounter {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+}
+

@@ -42,6 +42,19 @@ document.getElementById('name').addEventListener('input', function(e) {
   }
 });
 
+const textarea = document.getElementById("feedback");
+const charCounter = document.getElementById("charCounter");
+
+textarea.addEventListener("input", () => {
+  const currentLength = textarea.value.length;
+
+    if (currentLength == 1) {
+        charCounter.textContent = `${currentLength} character`;
+    } else {
+        charCounter.textContent = `${currentLength} characters`;
+    }
+});
+
 // Function to render the items on data-container
 function renderItems(items) {
     const container = document.getElementById('data-container');
