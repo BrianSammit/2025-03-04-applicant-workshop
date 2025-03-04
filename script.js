@@ -16,6 +16,8 @@ colorButton.addEventListener('click', () => {
     const colors = ['#FF5733', '#33FF57', '#3357FF', '#F3FF33'];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     colorBox.style.backgroundColor = randomColor;
+
+    
 });
 
 // Form submission handling
