@@ -30,6 +30,16 @@ form.addEventListener('submit', (event) => {
     form.reset();
 });
 
+document.getElementById('name').addEventListener('input', function(e) {
+  var name = e.target.value;
+  var pattern = /^[A-Za-zÀ-ÖØ-öø-ÿ]+([ '-][A-Za-zÀ-ÖØ-öø-ÿ]+)*$/;
+  if (name.match(pattern)) {
+    e.target.setCustomValidity('');
+  } else {
+    e.target.setCustomValidity('Please enter a valid name.');
+  }
+});
+
 // Function to render the items on data-container
 function renderItems(items) {
     const container = document.getElementById('data-container');
