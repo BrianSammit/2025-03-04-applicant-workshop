@@ -115,6 +115,14 @@ footer {
     margin-top: 2rem;
 }
 
+input:valid {
+  border: 2px solid green;
+}
+
+input:required:focus {
+  outline: 2px solid blue; 
+}
+
 .button_hello {
     background-color: aquamarine;
     text-align: center;
