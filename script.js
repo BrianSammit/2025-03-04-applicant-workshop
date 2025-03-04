@@ -18,6 +18,7 @@ colorButton.addEventListener('click', () => {
     colorBox.style.backgroundColor = randomColor;
 });
 
+// lkdjfslk
 // Form submission handling
 const form = document.getElementById('feedback-form');
 const formResponse = document.getElementById('form-response');
